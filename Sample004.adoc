@@ -1,0 +1,219 @@
+//==========
+// Attribute
+//==========
+
+// 文書の情報
+// * :version-label: を値無しにすることで好みの記述にできます。
+:lang: ja
+:doctype: book
+:author: WAKU-TAKE-A
+:revdate: 2019年3月11日
+:revnumber: 1.0版
+:version-label:
+// テーマファイルの設定
+:pdf-style: my-theme.yml
+// シンタックスハイライトの設定
+// ・Rougeを使います。asciidoctorインストールが必要です
+// ・rougeのスタイルは、https://github.com/jneen/rouge/tree/master/lib/rouge/themes にあります
+// ・デフォルトはgithubです
+:source-highlighter: rouge
+:rouge-style: pastie  
+
+//===========
+// Body
+//===========
+
+= Rougeによるシンタックスハイライト
+
+AsciiDocにおけるハイライト用ツールは、CodeRay・Pygments・Rougeなどがあります。今回は、Rougeを利用します。
+
+== 利用手順
+
+`Gemfile` に、 
+
+----
+gem "asciidoctor-rouge"
+----
+
+を追記し、
+ 
+----
+bundle install
+----
+
+してください。
+
+後は、adocファイルに以下のような属性を追記します。
+
+----
+:source-highlighter: rouge
+:rouge-style: pastie //<1>
+----
+
+<1> 見え方を変更できます。
+
+== サンプルコード
+
+以下のようなコードで試してみます。
+
+```
+[source, python, ***]
+----
+def Function(var): #<1>
+    """
+    My function.
+
+    Parameters
+    ----------
+    var : a variable.
+    """
+    if var == 1:
+        print("var is one.")
+    else:
+        print("NG")
+----
+
+<1> これはテストです。
+```
+
+== 行番号の有り、無し
+
+```
+[source, python]
+```
+
+の場合、
+
+[source, python]
+----
+def Function(var): #<1>
+    """
+    My function.
+
+    Parameters
+    ----------
+    var : a variable.
+    """
+    if var == 1:
+        print("var is one.")
+    else:
+        print("NG")
+----
+
+<1> これはテストです。
+
+```
+[source, python, linenums]
+```
+
+の場合、
+
+[source, python, linenums]
+----
+def Function(var): #<1>
+    """
+    My function.
+
+    Parameters
+    ----------
+    var : a variable.
+    """
+    if var == 1:
+        print("var is one.")
+    else:
+        print("NG")
+----
+
+<1> これはテストです。
+
+== indentについて
+
+```
+[source, python, linenums, indent=0]
+```
+
+の場合、
+
+[source, python, linenums, indent=0]
+----
+def Function(var): #<1>
+    """
+    My function.
+
+    Parameters
+    ----------
+    var : a variable.
+    """
+    if var == 1:
+        print("var is one.")
+    else:
+        print("NG")
+----
+
+<1> これはテストです。
+
+```
+[source, python, linenums, indent=4]
+```
+
+の場合、
+
+[source, python, linenums, indent=4]
+----
+def Function(var): #<1>
+    """
+    My function.
+
+    Parameters
+    ----------
+    var : a variable.
+    """
+    if var == 1:
+        print("var is one.")
+    else:
+        print("NG")
+----
+
+<1> これはテストです。
+
+
+== rouge-styleによる見え方
+
+rouge-styleによりどのように変わるか試してみました。個人的には、pastieが好みです。
+
+* base16 + 
+image:rouge_base16.jpg[]
+
+* colorful + 
+image:rouge_colorful.jpg[]
+
+<<<
+
+* github + 
+image:rouge_github.jpg[]
+
+* gruvbox + 
+image:rouge_gruvbox.jpg[]
+
+* igor_pro + 
+image:rouge_igor_pro.jpg[]
+
+<<<
+
+* molokai + 
+image:rouge_molokai.jpg[]
+
+* monokai + 
+image:rouge_monokai.jpg[]
+
+* monokai_sublime + 
+image:rouge_monokai_sublime.jpg[]
+
+<<<
+
+* pastie + 
+image:rouge_pastie.jpg[]
+
+* thankful_eyes + 
+image:rouge_thankful_eyes.jpg[]
+
