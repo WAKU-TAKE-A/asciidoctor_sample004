@@ -25,7 +25,7 @@
 
 = Rougeによるシンタックスハイライト
 
-AsciiDocにおけるハイライト用ツールは、CodeRay・Pygments・Rougeなどがあります。今回は、Rougeを利用します。
+AsciiDoctorにおけるハイライト用ツールは、CodeRay・Pygments・Rougeなどがあります。今回は、Rougeを利用します。
 
 == 利用手順
 
