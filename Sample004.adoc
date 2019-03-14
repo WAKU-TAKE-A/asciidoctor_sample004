@@ -84,23 +84,7 @@ def Function(var): #<1>
 
 の場合、
 
-[source, python]
-----
-def Function(var): #<1>
-    """
-    My function.
-
-    Parameters
-    ----------
-    var : a variable.
-    """
-    if var == 1:
-        print("var is one.")
-    else:
-        print("NG")
-----
-
-<1> これはテストです。
+image::rouge_linenums_001.jpg[]
 
 ```
 [source, python, linenums]
@@ -108,23 +92,7 @@ def Function(var): #<1>
 
 の場合、
 
-[source, python, linenums]
-----
-def Function(var): #<1>
-    """
-    My function.
-
-    Parameters
-    ----------
-    var : a variable.
-    """
-    if var == 1:
-        print("var is one.")
-    else:
-        print("NG")
-----
-
-<1> これはテストです。
+image::rouge_linenums_002.jpg[]
 
 == indentについて
 
@@ -134,23 +102,7 @@ def Function(var): #<1>
 
 の場合、
 
-[source, python, linenums, indent=0]
-----
-def Function(var): #<1>
-    """
-    My function.
-
-    Parameters
-    ----------
-    var : a variable.
-    """
-    if var == 1:
-        print("var is one.")
-    else:
-        print("NG")
-----
-
-<1> これはテストです。
+image::rouge_indent_001.jpg[]
 
 ```
 [source, python, linenums, indent=4]
@@ -158,24 +110,7 @@ def Function(var): #<1>
 
 の場合、
 
-[source, python, linenums, indent=4]
-----
-def Function(var): #<1>
-    """
-    My function.
-
-    Parameters
-    ----------
-    var : a variable.
-    """
-    if var == 1:
-        print("var is one.")
-    else:
-        print("NG")
-----
-
-<1> これはテストです。
-
+image::rouge_indent_002.jpg[]
 
 == rouge-styleによる見え方
 
