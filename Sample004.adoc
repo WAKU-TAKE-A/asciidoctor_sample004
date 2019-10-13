@@ -10,7 +10,9 @@
 :revdate: 2019年3月11日
 :revnumber: 1.0版
 :version-label:
-// テーマファイルの設定
+// ディレクトリやテーマファイルなどの設定
+// ・画像をサブディレクトリに入れるとGiHubで正常に見えません
+//:imagesdir: ./images
 :pdf-style: my-theme.yml
 // シンタックスハイライトの設定
 // ・Rougeを使います。asciidoctorインストールが必要です
