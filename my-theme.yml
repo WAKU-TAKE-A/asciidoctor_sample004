@@ -179,7 +179,7 @@ heading:
 #------
 link:
   font_family: $base_font_family
-  font_color: [0,255,0]
+  font_color: [0,0,255]
   font_size: $base_font_size
   font_style: $base_font_style
 #------
