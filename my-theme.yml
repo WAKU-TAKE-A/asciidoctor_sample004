@@ -1,6 +1,5 @@
 #------
 # https://github.com/asciidoctor/asciidoctor-pdf/blob/master/docs/theming-guide.adoc
-# を参考にしています
 #------
 
 #------
@@ -8,11 +7,22 @@
 #------
 font:
   catalog:
-    GenYoMin:
-      normal: GenYoMinJP-Regular.ttf
-      bold: GenYoMinJP-Bold.ttf
-      italic: GenYoMinJP-Regular.ttf
-      bold_italic: GenYoMinJP-Bold.ttf
+    Noto Serif:
+      normal: notoserif-regular-subset.ttf
+      bold: notoserif-bold-subset.ttf
+      italic: notoserif-italic-subset.ttf
+      bold_italic: notoserif-bold_italic-subset.ttf
+    M+ 1p Fallback:
+      normal: mplus1p-regular-fallback.ttf
+      bold: mplus1p-regular-fallback.ttf
+      italic: mplus1p-regular-fallback.ttf
+      bold_italic: mplus1p-regular-fallback.ttf
+    # Uncomment only installed fonts.
+    #GenYoMin:
+    #  normal: GenYoMinJP-Regular.ttf
+    #  bold: GenYoMinJP-Bold.ttf
+    #  italic: GenYoMinJP-Regular.ttf
+    #  bold_italic: GenYoMinJP-Bold.ttf
     GenShinGothic:
       normal: GenShinGothic-Normal.ttf
       bold: GenShinGothic-Bold.ttf
@@ -23,7 +33,18 @@ font:
       bold: GenShinGothic-P-Bold.ttf
       italic: GenShinGothic-P-Normal.ttf
       bold_italic: GenShinGothic-P-Bold.ttf
-  fallbacks:
+    #Mplus:
+    #  normal: mplus-1p-light.ttf
+    #  bold: mplus-1p-bold.ttf
+    #  italic: mplus-1p-light.ttf
+    #  bold_italic: mplus-1p-bold.ttf
+    #RictyDiminished:
+    #  normal: RictyDiminished-Regular.ttf
+    #  bold: RictyDiminished-Bold.ttf
+    #  italic: RictyDiminished-Oblique.ttf
+    #   bold_italic: RictyDiminished-BoldOblique.ttf
+fallbacks:
+    #- M+ 1p Fallback
     - GenShinGothic
 #------
 # Page Section
@@ -38,7 +59,7 @@ page:
 #------
 base:
   align: left
-  font_family: GenYoMin
+  font_family: GenShinGothicP
   font_color: [0,0,0]
   font_style: normal
   font_size: 11
@@ -56,6 +77,14 @@ base:
 vertical_rhythm: $base_line_height_length
 horizontal_rhythm: $base_line_height_length
 vertical_spacing: $vertical_rhythm
+#------
+# Literal Section
+#------
+literal:
+  font_family: GenShinGothic
+  font_color: $base_font_color
+  font_size: $base_font_size
+  font_style: $base_font_style
 #------
 # Title Page Section
 #------
@@ -168,26 +197,10 @@ link:
   font_size: $base_font_size
   font_style: $base_font_style
 #------
-# Caption Section
-#------
-caption:
-  font_family: GenShinGothic
-  font_color: $base_font_color
-  font_size: $base_font_size
-  font_style: $base_font_style
-#------
-# Literal Section
-#------
-literal:
-  font_family: GenShinGothic
-  font_color: $base_font_color
-  font_size: $base_font_size
-  font_style: $base_font_style
-#------
 # Code section
 #------
 code:
-  font_family: GenShinGothic
+  font_family: $literal_font_family
   font_color: $base_font_color
   font_size: $base_font_size
   font_style: $base_font_style
@@ -198,6 +211,14 @@ code:
   border_color: $base_border_color
   border_radius: $base_border_radius
   border_width: 0.75
+#------
+# Caption Section
+#------
+caption:
+  font_family: $literal_font_family
+  font_color: $base_font_color
+  font_size: $base_font_size
+  font_style: $base_font_style
 #------
 # Table section
 #------

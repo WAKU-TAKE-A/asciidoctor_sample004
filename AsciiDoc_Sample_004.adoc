@@ -1,5 +1,5 @@
 //==========
-// Attribute
+// 属性(Attribute)
 //==========
 
 // 文書の情報
@@ -8,11 +8,10 @@
 :doctype: book
 :author: WAKU-TAKE-A
 :revdate: 2019年3月11日
-:revnumber: 1.0版
+:revnumber: 1.1版
 :version-label:
 // ディレクトリやテーマファイルなどの設定
-// ・画像をサブディレクトリに入れるとGiHubで正常に見えません
-//:imagesdir: ./images
+:imagesdir: ./img
 :pdf-style: my-theme.yml
 // シンタックスハイライトの設定
 // ・Rougeを使います。asciidoctorインストールが必要です
@@ -22,7 +21,7 @@
 :rouge-style: pastie  
 
 //===========
-// Body
+// 本文(Body)
 //===========
 
 = Rougeによるシンタックスハイライト
@@ -59,6 +58,8 @@ bundle install
 以下のようなコードで試してみます。
 
 image::test_001.jpg[]
+
+対応している言語については、 http://rouge.jneen.net/[こちら] を参考にしてください。
 
 == 行番号の有り、無し
 
@@ -136,3 +137,8 @@ image:rouge_pastie.jpg[]
 * thankful_eyes + 
 image:rouge_thankful_eyes.jpg[]
 
+== 本ページについて
+
+本ページはAsciiDocで作成しています。 https://github.com/WAKU-TAKE-A/asciidoctor_sample004[こちら] にサンプルを置いておきます。サンプルは、「 https://waku-take-a.github.io/Visual%2520Studio%2520Code%25E3%2581%258B%25E3%2582%2589PDF%25E3%2582%2592%25E5%2587%25BA%25E5%258A%259B%25E3%2581%2599%25E3%2582%258B.html[Visual Studio CodeからPDFを出力する] 」の方法で比較的簡単にPDFやHTMLにすることができます。
+
+AsciiDoc_Sample終わり
