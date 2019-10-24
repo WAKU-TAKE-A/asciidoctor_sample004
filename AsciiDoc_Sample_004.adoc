@@ -11,8 +11,9 @@
 :revnumber: 1.1版
 :version-label:
 // ディレクトリやテーマファイルなどの設定
-:imagesdir: ./img
 :pdf-style: my-theme.yml
+:imagesdir: ./img
+//:pdf-fontsdir: ../fonts
 // シンタックスハイライトの設定
 // ・Rougeを使います。asciidoctorインストールが必要です
 // ・rougeのスタイルは、https://github.com/jneen/rouge/tree/master/lib/rouge/themes にあります
