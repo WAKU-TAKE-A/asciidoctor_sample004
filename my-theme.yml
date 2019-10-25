@@ -7,45 +7,18 @@
 #------
 font:
   catalog:
-    Noto Serif:
-      normal: notoserif-regular-subset.ttf
-      bold: notoserif-bold-subset.ttf
-      italic: notoserif-italic-subset.ttf
-      bold_italic: notoserif-bold_italic-subset.ttf
-    M+ 1p Fallback:
-      normal: mplus1p-regular-fallback.ttf
-      bold: mplus1p-regular-fallback.ttf
-      italic: mplus1p-regular-fallback.ttf
-      bold_italic: mplus1p-regular-fallback.ttf
-    # Uncomment only installed fonts.
-    #GenYoMin:
-    #  normal: GenYoMinJP-Regular.ttf
-    #  bold: GenYoMinJP-Bold.ttf
-    #  italic: GenYoMinJP-Regular.ttf
-    #  bold_italic: GenYoMinJP-Bold.ttf
-    GenShinGothic:
-      normal: GenShinGothic-Normal.ttf
-      bold: GenShinGothic-Bold.ttf
-      italic: GenShinGothic-Normal.ttf
-      bold_italic: GenShinGothic-Bold.ttf
-    GenShinGothicP:
-      normal: GenShinGothic-P-Normal.ttf
-      bold: GenShinGothic-P-Bold.ttf
-      italic: GenShinGothic-P-Normal.ttf
-      bold_italic: GenShinGothic-P-Bold.ttf
-    #Mplus:
-    #  normal: mplus-1p-light.ttf
-    #  bold: mplus-1p-bold.ttf
-    #  italic: mplus-1p-light.ttf
-    #  bold_italic: mplus-1p-bold.ttf
-    #RictyDiminished:
-    #  normal: RictyDiminished-Regular.ttf
-    #  bold: RictyDiminished-Bold.ttf
-    #  italic: RictyDiminished-Oblique.ttf
-    #   bold_italic: RictyDiminished-BoldOblique.ttf
-fallbacks:
-    #- M+ 1p Fallback
-    - GenShinGothic
+    KaiGen Gothic JP:
+      normal: KaiGenGothicJP-Regular.ttf
+      bold: KaiGenGothicJP-Bold.ttf
+      italic: KaiGenGothicJP-Regular-Italic.ttf
+      bold_italic: KaiGenGothicJP-Bold-Italic.ttf
+    Roboto Mono:
+      normal: RobotoMono-Regular.ttf
+      bold: RobotoMono-Bold.ttf
+      italic: RobotoMono-Italic.ttf
+      bold_italic: RobotoMono-BoldItalic.ttf
+  fallbacks:
+    - KaiGen Gothic JP
 #------
 # Page Section
 #------
@@ -59,7 +32,7 @@ page:
 #------
 base:
   align: left
-  font_family: GenShinGothicP
+  font_family: KaiGen Gothic JP
   font_color: [0,0,0]
   font_style: normal
   font_size: 11
@@ -81,7 +54,7 @@ vertical_spacing: $vertical_rhythm
 # Literal Section
 #------
 literal:
-  font_family: GenShinGothic
+  font_family: Roboto Mono
   font_color: $base_font_color
   font_size: $base_font_size
   font_style: $base_font_style
