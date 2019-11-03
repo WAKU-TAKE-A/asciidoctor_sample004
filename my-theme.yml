@@ -7,18 +7,39 @@
 #------
 font:
   catalog:
+  catalog:
+    Noto Serif:
+      normal: notoserif-regular-subset.ttf
+      bold: notoserif-bold-subset.ttf
+      italic: notoserif-italic-subset.ttf
+      bold_italic: notoserif-bold_italic-subset.ttf
+    M+ 1mn:
+      normal: mplus1mn-regular-subset.ttf
+      bold: mplus1mn-bold-subset.ttf
+      italic: mplus1mn-italic-subset.ttf
+      bold_italic: mplus1mn-bold_italic-subset.ttf
     KaiGen Gothic JP:
       normal: KaiGenGothicJP-Regular.ttf
       bold: KaiGenGothicJP-Bold.ttf
       italic: KaiGenGothicJP-Regular-Italic.ttf
       bold_italic: KaiGenGothicJP-Bold-Italic.ttf
-    Roboto Mono:
-      normal: RobotoMono-Regular.ttf
-      bold: RobotoMono-Bold.ttf
-      italic: RobotoMono-Italic.ttf
-      bold_italic: RobotoMono-BoldItalic.ttf
+    KaiGen Gothic JP:
+      normal: KaiGenGothicJP-Regular.ttf
+      bold: KaiGenGothicJP-Bold.ttf
+      italic: KaiGenGothicJP-Regular-Italic.ttf
+      bold_italic: KaiGenGothicJP-Bold-Italic.ttf
+    #GenYo Mincho JP:
+    #  normal: GenYoMinJP-Regular.ttf
+    #  bold: GenYoMinJP-Bold.ttf
+    #  italic: GenYoMinJP-Regular.ttf
+    #  bold_italic: GenYoMinJP-Bold.ttf
+    #Ricty Diminished:
+    #  normal: RictyDiminished-Regular.ttf
+    #  bold: RictyDiminished-Bold.ttf
+    #  italic: RictyDiminished-Oblique.ttf
+    #  bold_italic: RictyDiminished-BoldOblique.ttf
   fallbacks:
-    - KaiGen Gothic JP
+    - Noto Serif
 #------
 # Page Section
 #------
@@ -54,7 +75,7 @@ vertical_spacing: $vertical_rhythm
 # Literal Section
 #------
 literal:
-  font_family: Roboto Mono
+  font_family: KaiGen Gothic JP
   font_color: $base_font_color
   font_size: $base_font_size
   font_style: $base_font_style
