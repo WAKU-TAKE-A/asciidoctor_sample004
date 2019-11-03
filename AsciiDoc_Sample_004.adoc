@@ -7,8 +7,8 @@
 :lang: ja
 :doctype: book
 :author: WAKU-TAKE-A
-:revdate: 2019年3月11日
-:revnumber: 1.2版
+:revdate: 2019年11月3日
+:revnumber: 1.3版
 :version-label:
 // ディレクトリやテーマファイルなどの設定
 :pdf-style: my-theme.yml
