@@ -23,11 +23,6 @@ font:
       bold: KaiGenGothicJP-Bold.ttf
       italic: KaiGenGothicJP-Regular-Italic.ttf
       bold_italic: KaiGenGothicJP-Bold-Italic.ttf
-    KaiGen Gothic JP:
-      normal: KaiGenGothicJP-Regular.ttf
-      bold: KaiGenGothicJP-Bold.ttf
-      italic: KaiGenGothicJP-Regular-Italic.ttf
-      bold_italic: KaiGenGothicJP-Bold-Italic.ttf
     #GenYo Mincho JP:
     #  normal: GenYoMinJP-Regular.ttf
     #  bold: GenYoMinJP-Bold.ttf
