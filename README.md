@@ -21,3 +21,4 @@ PowerShellの場合：
 ```
 
 * 繰り返し行う時は、ターミナル上で↑キーを押し、「Return」。
+* DOSプロンプト上で、「convert_pdf.bat」でもPDFは作成できます。
