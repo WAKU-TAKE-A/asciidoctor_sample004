@@ -1,6 +1,8 @@
 # asciidoctor_sample004
 
-asciidoctor-pdfのサンプルです。
+asciidoctor-pdf version 2系のサンプルです。asciidoctor-pdf-cjkには対応していません。
+
+asciidoctor-pdf-cjk対応版(version 1.5)は、上部のtagsの「For_asciidoctor-pdf-cjk」を参考にしてください。
 
 ## PDF出力手順
 

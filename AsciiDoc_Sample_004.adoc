@@ -7,13 +7,13 @@
 :lang: ja
 :doctype: book
 :author: WAKU-TAKE-A
-:revdate: 2019年11月3日
-:revnumber: 1.3版
+:revdate: 2022年7月11日
+:revnumber: 1.4版
 :version-label:
 // ディレクトリやテーマファイルなどの設定
-:pdf-style: my-theme.yml
 :imagesdir: ./img
-//:pdf-fontsdir: ../fonts
+:pdf-themesdir: ./
+:pdf-theme: my-theme.yml
 // シンタックスハイライトの設定
 // ・Rougeを使います。asciidoctorインストールが必要です
 // ・rougeのスタイルは、https://github.com/jneen/rouge/tree/master/lib/rouge/themes にあります
