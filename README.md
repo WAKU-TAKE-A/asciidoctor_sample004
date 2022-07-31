@@ -1,4 +1,4 @@
-# asciidoctor_sample004
+# 概要
 
 asciidoctor-pdf version 2系のサンプルです。asciidoctor-pdf-cjkには対応していません。
 
